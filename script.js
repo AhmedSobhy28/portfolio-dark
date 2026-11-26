@@ -41,3 +41,11 @@ document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () =
   grid.querySelectorAll('.card').forEach(c => { c.hidden = !(f === 'all' || c.dataset.cat === f); });
 }));
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('img[data-asset]').forEach(img => {
+  const use = () => { const src = window.ASSETS && window.ASSETS[img.dataset.asset]; if (src && img.src !== src) img.src = src; else img.parentNode.classList.add('empty'); };
+  img.addEventListener('error', use, { once: true });
+  if (img.complete && img.naturalWidth === 0) use();
+});
+const fav = document.getElementById('favicon');
+if (fav) { const t = new Image(); t.onerror = () => { if (window.ASSETS) fav.href = window.ASSETS.favicon; }; t.src = fav.href; }
