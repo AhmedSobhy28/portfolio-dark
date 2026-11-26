@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Sobhy | IT, networking and full-stack development</title>
+<meta name="description" content="Ahmed Sobhy, IT student in Alexandria specializing in networking, building full-stack web products with React, Next.js, NestJS and PostgreSQL.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top">Ahmed Sobhy</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#path">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow">Alexandria, Egypt · Open to remote work</p>
+    <h1>I build real products and know how systems get broken into.</h1>
+    <p class="lead">IT student specializing in networking, with hands-on full-stack experience in React, Next.js, NestJS and PostgreSQL.</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Focus areas">
+    <p>What if infrastructure and software were built by the same person?</p>
+    <p>What if every app was designed by someone who has tried to attack it?</p>
+    <p>What if a student project shipped like a real product?</p>
+  </section>
+
+  <section id="about" class="split">
+    <div>
+      <h2>About</h2>
+    </div>
+    <div class="prose">
+      <p>I am a 22-year-old IT student at Borg El Arab Technological University, studying Networking (B.Sc., expected 2027). My core track is CCNA, Network+, subnetting, Linux and Cisco concepts. My passion is full-stack web development.</p>
+      <p>I ship deployed projects, from a QR code generator to a delivery platform for a real local store in Alexandria. Knowing how systems get broken into changes how I build them.</p>
+      <div class="photo-slot"><img src="assets/photo.jpg" alt="Portrait of Ahmed Sobhy" onerror="this.parentNode.classList.add('empty')"><span>Photo coming soon</span></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="web" type="button">Web</button>
+        <button class="chip" data-filter="security" type="button">Security and networking</button>
+        <button class="chip" data-filter="data" type="button">Data</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <h3 class="sub">In progress</h3>
+    <div class="grid" id="wip"></div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills" id="skillList"></dl>
+  </section>
+
+  <section id="path" class="split">
+    <div><h2>Education</h2></div>
+    <div class="prose">
+      <h3>B.Sc. Information Technology, Networking Specialization</h3>
+      <p class="muted">Borg El Arab Technological University · expected 2027</p>
+      <p>Coursework: Computer Networks, CCNA, Web Development, Java OOP, Databases, Data Structures, Operating Systems, Cyber Security.</p>
+      <h3>Certifications and courses</h3>
+      <ul class="plain">
+        <li><strong>Completed:</strong> Cisco Networking Academy (core networking and subnetting), InfoSec4TC Cybersecurity Specialist Program, McKinsey Forward (Professional Leadership and Core Skills)</li>
+        <li><strong>In progress:</strong> CCNA (Cisco / Jeremy's IT Lab), CompTIA Network+, Linux Essentials</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="eyebrow">Great ventures start when audacious minds meet</p>
+    <h2>Let's build something.</h2>
+    <a class="mail" href="mailto:ah.sobhy07@gmail.com">ah.sobhy07@gmail.com</a>
+    <ul class="links">
+      <li><a href="https://github.com/AhmedSobhy28" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/ahmed-sobhy-mohamed-150643279" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://wa.me/201099886353" target="_blank" rel="noopener">WhatsApp</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> Ahmed Sobhy</span><a href="#top">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
