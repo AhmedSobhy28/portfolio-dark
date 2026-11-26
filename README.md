@@ -3,6 +3,6 @@
 Plain HTML, CSS and JS. No build step.
 
 - Edit text in `index.html` and project data in `script.js`.
-- Put your photo at `assets/photo.jpg` and logo at `assets/logo.svg` (the photo slot hides itself until the file exists).
+- Images: `assets/photo.jpg`, `assets/logo.png` (light version for the dark theme) and `assets/favicon.png`. Upload the three files into an `assets` folder in this repo (Add file > Upload files). Until they are there, `assets.js` supplies built-in copies, so the site still shows them. Delete `assets.js` and its script tag in `index.html` once the files are uploaded.
 - Preview: open `index.html`, or run `python3 -m http.server`.
-- Deploy: push to a GitHub repo, then Settings > Pages > deploy from the main branch (root). Vercel also works.
+- Deploy: Settings > Pages > deploy from branch main, root. Vercel also works.
