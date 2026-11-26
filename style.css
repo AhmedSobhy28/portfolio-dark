@@ -4,7 +4,8 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 "Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px clamp(20px,5vw,56px);background:rgba(14,20,22,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.brand{font-weight:600;text-decoration:none;letter-spacing:-.01em}
+.brand{white-space:nowrap;display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;letter-spacing:-.01em}
+.brand img{display:block;width:32px;height:32px}
 .top nav{display:flex;gap:clamp(12px,3vw,28px);font-size:15px}
 .top nav a{text-decoration:none;color:var(--muted)}
 .top nav a:hover{color:var(--accent)}
@@ -26,8 +27,8 @@ h3{font-size:18px;font-weight:600;margin:28px 0 6px}
 @media(min-width:800px){.split{grid-template-columns:1fr 2fr;gap:56px}}
 .prose p{margin:0 0 18px;max-width:38em;color:#c6d3d5}
 .muted{color:var(--muted)!important}
-.photo-slot{margin-top:28px;width:min(100%,320px);aspect-ratio:1;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--bg2);position:relative}
-.photo-slot img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-slot{margin-top:28px;width:min(100%,320px);aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--bg2);position:relative}
+.photo-slot img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
 .photo-slot span{display:none}
 .photo-slot.empty img{display:none}
 .photo-slot.empty span{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
@@ -67,3 +68,4 @@ footer a{text-decoration:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .card[hidden]{display:none}
+@media(max-width:480px){.brand span{display:none}.top nav{gap:14px}}
